@@ -1,0 +1,6 @@
+.idea
+.vagrant
+
+/code/symfony/app/cache
+/code/symfony/app/logs
+/code/symfony/vendor

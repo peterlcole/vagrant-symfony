@@ -1,0 +1,12 @@
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+
+#APP_ENV=dev
+#APP_ENV=qa
+#APP_ENV=prod
+APP_ENV=vagrant
+
+
+#SYMFONY_ENV=dev
+#SYMFONY_ENV=qa
+#SYMFONY_ENV=prod
+SYMFONY_ENV=vagrant
