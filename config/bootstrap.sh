@@ -15,7 +15,6 @@ sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password passwor
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
 
 apt-get -y install lamp-server^ php5-curl > /dev/null 2>&1
-# apt-get -y install php5-curl > /dev/null 2>&1
 
 ###
 # Apache
