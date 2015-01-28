@@ -35,7 +35,6 @@ a2enmod ssl > /dev/null 2>&1
 a2dissite 000-default > /dev/null 2>&1
 a2ensite symfony > /dev/null 2>&1
 
-chown -R vagrant:vagrant /var/www/html
 rm /var/www/html/index.html
 
 service apache2 restart  > /dev/null 2>&1
@@ -56,6 +55,7 @@ sudo chmod a+x /usr/local/bin/symfony
 cd /var/www/html/symfony
 composer install
 
+chown -R vagrant:vagrant /var/www/html
 
 ###
 # MySQL
