@@ -70,23 +70,3 @@ mysql -uroot -proot -e "GRANT ALL PRIVILEGES ON symfony.* TO 'symfony'@'%'"
 mysql -uroot -proot -e "FLUSH PRIVILEGES"
 
 service mysql restart > /dev/null 2>&1
-
-#
-# Symfony
-#
-#echo '---------------------------'
-#echo 'Installing Symfony 2.6'
-#composer create-project --no-scripts symfony/framework-standard-edition /tmp/symfony '~2.6' --no-scripts > /dev/null 2>&1
-#cp /vagrant/config/symfony/config_vagrant.yml /tmp/symfony/app/config/
-#cp /vagrant/config/symfony/parameters.yml /tmp/symfony/app/config/
-#cp /vagrant/config/symfony/app.php /tmp/symfony/web/app.php
-#cp /vagrant/config/symfony/AppKernel.php /tmp/symfony/app/
-#
-#cd /tmp/symfony
-#composer run-script post-root-package-install > /dev/null 2>&1
-#composer run-script post-install-cmd > /dev/null 2>&1
-#php app/console generate:bundle --namespace=AppBundle --dir=src --format=annotation --no-interaction > /dev/null 2>&1
-#
-#mv /tmp/symfony /var/www/html/
-#
-#chown -R vagrant:vagrant /var/www/html
