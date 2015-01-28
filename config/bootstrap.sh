@@ -9,23 +9,20 @@ echo 'Installing system tools'
 apt-get -y install acl curl git sqlite varnish > /dev/null 2>&1
 
 echo '---------------------------'
-echo 'Copying configuration files'
-cp -r /vagrant/config/etc/* /etc/
-
-echo '---------------------------'
 echo 'Installing LAMP stack'
 
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
 
-apt-get -y install lamp-server^ > /dev/null 2>&1
+apt-get -y install lamp-server^ php5-curl > /dev/null 2>&1
+# apt-get -y install php5-curl > /dev/null 2>&1
 
 ###
 # Apache
 ###
 echo '↳ Configuring Apache'
 
-# cp -r /vagrant/config/apache2/* /etc/apache2/
+cp -r /vagrant/config/etc/apache2/* /etc/apache2/
 
 a2enconf environment > /dev/null 2>&1
 
@@ -53,7 +50,7 @@ sudo mv symfony.phar /usr/local/bin/symfony
 sudo chmod a+x /usr/local/bin/symfony
 
 cd /var/www/html/symfony
-composer install
+composer install > /dev/null 2>&1
 
 chown -R vagrant:vagrant /var/www/html
 
@@ -62,7 +59,7 @@ chown -R vagrant:vagrant /var/www/html
 ###
 echo '↳ Configuring MySQL'
 
-# cp -r /vagrant/config/mysql/* /etc/mysql/
+cp -r /vagrant/config/etc/mysql/* /etc/mysql/
 
 mysql -uroot -proot -e "DELETE FROM mysql.user WHERE User=''"
 mysql -uroot -proot -e "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1')"
