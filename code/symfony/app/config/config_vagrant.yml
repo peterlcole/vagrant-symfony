@@ -1,6 +1,6 @@
 imports:
-    - { resource: parameters_vagrant.yml }
     - { resource: config.yml }
+    - { resource: parameters_vagrant.yml }
 
 framework:
     router:
