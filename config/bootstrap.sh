@@ -8,6 +8,9 @@ echo '---------------------------'
 echo 'Installing system tools'
 apt-get -y install acl curl git sqlite varnish > /dev/null 2>&1
 
+cp /vagrant/config/etc/environment /etc/
+cp -r /vagrant/config/etc/profile.d/* /etc/
+
 echo '---------------------------'
 echo 'Installing LAMP stack'
 
