@@ -48,6 +48,7 @@ curl -LsS http://symfony.com/installer > symfony.phar
 sudo mv symfony.phar /usr/local/bin/symfony
 sudo chmod a+x /usr/local/bin/symfony
 
+echo '↳ Installing project dependencies via Composer'
 cd /var/www/html/symfony
 composer install > /dev/null 2>&1
 
