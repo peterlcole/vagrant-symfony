@@ -9,6 +9,8 @@ cd <project name>
 vagrant up
 ```
 
+Note: Vagrant and VirtualBox are required.
+
 Note: By default traffic on port 8000 is forwarded to the guest machine's port 80. If you are running multiple Vagrant instances based on this project, you will need to edit the *Vagrantfile* and change the host port.
 
 # Use
