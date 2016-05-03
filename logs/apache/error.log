@@ -1,0 +1,11 @@
+[Tue May 03 11:20:47.480239 2016] [mpm_event:notice] [pid 9128:tid 139988048639872] AH00489: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Tue May 03 11:20:47.480255 2016] [core:notice] [pid 9128:tid 139988048639872] AH00094: Command line: '/usr/sbin/apache2'
+[Tue May 03 11:20:51.930642 2016] [mpm_event:notice] [pid 9128:tid 139988048639872] AH00491: caught SIGTERM, shutting down
+[Tue May 03 11:20:52.976121 2016] [mpm_prefork:notice] [pid 11811] AH00163: Apache/2.4.7 (Ubuntu) configured -- resuming normal operations
+[Tue May 03 11:20:52.976198 2016] [core:notice] [pid 11811] AH00094: Command line: '/usr/sbin/apache2'
+[Tue May 03 11:20:54.146180 2016] [mpm_prefork:notice] [pid 11811] AH00169: caught SIGTERM, shutting down
+[Tue May 03 11:20:55.235339 2016] [mpm_prefork:notice] [pid 11887] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.16 configured -- resuming normal operations
+[Tue May 03 11:20:55.235386 2016] [core:notice] [pid 11887] AH00094: Command line: '/usr/sbin/apache2'
+[Tue May 03 11:20:56.656018 2016] [mpm_prefork:notice] [pid 11887] AH00169: caught SIGTERM, shutting down
+[Tue May 03 11:20:57.979039 2016] [mpm_prefork:notice] [pid 12070] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.16 OpenSSL/1.0.1f configured -- resuming normal operations
+[Tue May 03 11:20:57.980015 2016] [core:notice] [pid 12070] AH00094: Command line: '/usr/sbin/apache2'

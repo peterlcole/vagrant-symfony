@@ -1,0 +1,13 @@
+---
+folders:
+- host: project
+  guest: /var/www/html/project
+- host: logs/apache
+  guest: /var/log/apache2
+- host: logs/mysql
+  guest: /var/log/mysql
+ports:
+- host: 8080
+  guest: 80
+- host: 8443
+  guest: 443
